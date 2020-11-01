@@ -1,30 +1,29 @@
 import "./App.css";
 import React from "react";
+import SetState from "./SetState";
+import Appsquad from "./Squad/Appsquad";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isSignegl: false,
-      text: "Hello",
+      text: "CLICK",
     };
   }
 
   sign = () => {
-    this.setState({ isSignegl: true });
+    this.setState({ isSignegl: !this.state.isSignegl });
     console.log(this.state);
   };
 
   render() {
     return (
       <div>
-        {this.state.isSignegl ? (
-          <div>{this.state.text}</div>
-        ) : (
-          <div>
-            <button onClick={this.sign}>GO!!!</button>
-          </div>
-        )}
+        <button onClick={this.sign}>GO!!!</button>
+        {this.state.isSignegl ? <div>GOGOGO</div> : <div>NONONO</div>}
+        <SetState />
+        <Appsquad />
       </div>
     );
   }

@@ -19,3 +19,27 @@ code {
 .button2 {
   border: 2px solid green;
 }
+.italick {
+  font-style: italic;
+}
+.color {
+  color: peru;
+}
+.big {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: peru;
+}
+.midle {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: peru;
+}
+.small {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: peru;
+}
