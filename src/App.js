@@ -4,7 +4,7 @@ import SetState from "./SetState";
 import Appsquad from "./Squad/Appsquad";
 import dataTest from "./data.json";
 import DataList from "./DataList";
-
+import PropTypesTest from "./PropTypesTest";
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +36,7 @@ class App extends React.Component {
             />
           );
         })}
+        <PropTypesTest padding={1} />
       </div>
     );
   }
